@@ -1,0 +1,288 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    overflow:hidden;
+    
+}
+
+
+.container{
+    background-image: url(/image/cloud1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    
+    
+}
+
+.left h1, h2, h3, p{
+    color: white;
+}
+
+.left h1{
+    position: absolute;
+    left: 50px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 58vh;
+    left: 0px;
+    height: 50vh;
+    background-color: rgba(204, 204, 204, 0.443);
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+    
+    
+
+}
+/* .today{
+    padding: 0 0 0 60px ;
+} */
+
+.details h2{
+    padding: 0 15px;
+}
+
+.right{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50vh;
+    background-color: rgba(204, 204, 204, 0.443);
+    width: 30%;
+    border-radius: 10px;
+}
+
+.right .input{
+    width: 80%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    color: white;
+    position: relative;
+    left: 20px;
+    top: 15px;
+    
+}
+.right .input::placeholder{
+    color: white;
+}
+
+.right button{
+    width: 60px;
+    height:65px ;
+    background-color: #FF5733 ;
+    border: none;
+    color: white;
+    position: relative;
+    right: -15px;
+    top: 0px;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.right h3, h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+.name1, .name2, .name3, .name4, .name5{
+    border-radius: 10px;
+    height: 65px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.name1{
+    margin-right: 10px;
+    display: none;
+}
+
+.tempIcon2, .tempIcon3, .tempIcon4, .tempIcon5{
+    margin-top: -65px;
+}
+
+.name{
+    text-transform: capitalize;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-now{
+    display: flex;
+    justify-content: end;
+    text-align: flex-end;
+    text-align: center;
+    padding-left: 60px;
+    border: 1px solid #ccc;
+    width: 30%;
+    height: 35vh;
+    border-radius: 10px;
+    margin: 25px 5px;
+}
+
+.right-now .tempIcon1{
+    padding: 50px;
+    font-size: 70px;
+}
+
+
+
+
+.today{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 25px 8px;
+    height: 35vh;
+    width: 40%; 
+}
+
+ .hour, .minute, .second{
+    color: white;
+   
+}
+
+.details:nth-child(1){
+    display: flex;
+    flex-grow: 1;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: flex-start;
+}
+
+.time{
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.week, .clock{
+    display: flex;
+    position: relative;
+    left: 50px;
+}
+
+.clock .ampm{
+    position: relative;
+    top: 12px;
+    left: 5px;
+}
+.weekday, .tanggal, .bulan, .year{
+    padding-left: 5px;
+    margin-top: -8px;
+}
+
+.wdescription{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+h4{
+    color: white;
+    padding-left: 20px;
+}
+
+h5{
+    color: white;
+    padding-right: 20px;
+    
+}
+
+
+@media (max-width:360px){
+    
+    body{
+        overflow-y:scroll;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 137vh;
+        overflow-y:scroll;
+    }
+    .right {
+        position: absolute;
+        top: 230px;
+        right: 19px;
+        height: 50vh;
+        background-color: rgba(204, 204, 204, 0.443);
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .right button {
+        width: 60px;
+        height: 50px;
+        background-color: #FF5733;
+        border: none;
+        color: white;
+        position: relative;
+        right: -265px;
+        top: -33px;
+        cursor: pointer;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .details {
+        
+        position: absolute;
+        top: 97vh;
+        left: 0px;
+        height: 40vh;
+        overflow-x: scroll;
+       
+       
+    }
+    .right-now .tempIcon1 {
+        padding: 30px 0 0 0;
+        font-size: 70px;
+    }
+
+    .right-now {
+       margin-left: 10px;
+       min-width: 35%;
+    }
+    .right-now .tempIcon1, .Today, .temp1{
+       margin-top: 50px;
+    }
+
+    .today {
+        
+        min-width: 45%;
+    }
+
+ 
+}
